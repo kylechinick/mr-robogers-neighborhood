@@ -38,8 +38,8 @@ function numberToPhraseSubstitutor(numbersArray) {
 }
 
 function humanLegibilityTransformer(array) {
-  array.toString();
-  return array;
+  const humanLegibleResponse = '"' + array.toString().replace(/,/g, ' ') + '"';
+  return humanLegibleResponse;
 }
 
 // numberToPhraseSubstitutor(rangedArray);

@@ -72,3 +72,9 @@ N/A
 - Test: "It should return a string version of the array it is called on"
 - Code: `humanLegibilityTransformer([0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5]);`
 - Expected Output: "0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5"
+
+#### Test #2
+
+- Test: "It should replace all commas with a space"
+- Code: `humanLegibilityTransformer([0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5]);`
+- Expected Output: "0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5"
