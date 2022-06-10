@@ -9,7 +9,7 @@ This app generates responses to user input via a series of numbers and 3 specifi
 ## Technologies
 
 - HTML
-- CSS
+- CSS / Bootstrap
 - JavaScript / jQuery
 
 ## Description
