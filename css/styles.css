@@ -3,6 +3,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-color: hsl(35, 74%, 95%);
+}
+
 h1 {
   font-weight: 900;
 }
@@ -30,7 +34,20 @@ input {
   animation: active-typing 3s steps(26, end);
   animation-delay: 2s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+}
+
+#mr-robogers-response {
+  display: none;
+}
+
+.cursor-pipe {
+  font-weight: 900;
+  opacity: 0;
+  animation: blinking-cursor 1.5s steps(2) infinite;
+}
+
+.closing-cursor {
+  animation-delay: 7s;
 }
 
 @keyframes active-typing {
@@ -47,22 +64,8 @@ input {
   }
 }
 
-.cursor-pipe {
-  font-weight: 900;
-  opacity: 0;
-  animation: blinking-cursor 1.5s steps(2) infinite;
-}
-
-.closing-cursor {
-  animation-delay: 7s;
-}
-
 @keyframes blinking-cursor {
   0% {
     opacity: 1;
   }
-}
-
-#mr-robogers-response {
-  display: none;
 }
