@@ -3,32 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/scripts.js"></script>
     <title>Mr. Roboger's Neighborhood</title>
   </head>
-  <body>
-    <h1>Mr. Roboger's Neighborhood</h1>
-    <h2>Number for Mr. Roboger</h2>
-    <form>
-      <label for="prompt-number"
-        >Enter a number below to receive a response from Mr. Roboger</label
-      >
-      <input type="number" name="prompt-number" id="prompt-number" />
-      <button type="submit">Submit Number</button>
-    </form>
-    <div>
-      <h2>Mr. Roboger's Response</h2>
-      <p id="mr-robogers-response"></p>
-    </div>
+  <body class="d-flex flex-column mb-3">
+    <main class="container-lg">
+      <h1>Mr. Roboger's Neighborhood</h1>
+      <h2>Number for Mr. Roboger</h2>
+      <form>
+        <div class="mb-3">
+          <label for="prompt-number" class="form-label"
+            >Enter a number below to receive a response from Mr. Roboger</label
+          >
+          <input
+            type="number"
+            name="prompt-number"
+            id="prompt-number"
+            class="form-control"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Number</button>
+      </form>
+      <div>
+        <h2>Mr. Roboger's Response</h2>
+        <p id="mr-robogers-response"></p>
+      </div>
+    </main>
   </body>
 </html>
