@@ -64,3 +64,11 @@ N/A
 - Test: "It should loop through each element in an array and swap all elements that do not have a 3 or a 2, but do contain a 1, to the string 'Beep!'"
 - Code: `numberToPhraseSubstitutor(rangedArray);`
 - Expected Output: [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?', 'Beep!', 'Beep!']
+
+### Describe: humanLegibilityTransformer()
+
+#### Test #1
+
+- Test: "It should return a string version of the array it is called on"
+- Code: `humanLegibilityTransformer([0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5]);`
+- Expected Output: "0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5"
