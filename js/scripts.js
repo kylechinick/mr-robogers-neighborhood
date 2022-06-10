@@ -34,8 +34,12 @@ function humanLegibilityTransformer(array) {
 
 // UI Logic
 
-function userResponder(response) {
-  $('#mr-robogers-response').text(response).show('blind', 4000);
+function userResponder(response, totalElements) {
+  if (totalElements > 200) {
+    $('#mr-robogers-response').text(response).show('blind', 5000);
+  } else {
+    $('#mr-robogers-response').text(response).show('blind', 2000);
+  }
 }
 
 $(document).ready(function () {
@@ -43,6 +47,7 @@ $(document).ready(function () {
     event.preventDefault();
 
     $('.closing-cursor').remove();
+    $('#mr-robogers-response').hide();
 
     const providedNumber = parseInt($('#prompt-number').val());
 
@@ -50,7 +55,10 @@ $(document).ready(function () {
 
     numberToPhraseSubstitutor(rangedArray);
 
-    userResponder(humanLegibilityTransformer(responseArray));
+    userResponder(
+      humanLegibilityTransformer(responseArray),
+      responseArray.length
+    );
 
     $('#response-container').append(
       `<p class="cursor-pipe closing-cursor terminal-text">|</p>`
