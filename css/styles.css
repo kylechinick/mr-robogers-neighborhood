@@ -1,11 +1,7 @@
 * {
   /* border: 1px solid red; */
   box-sizing: border-box;
-  /* margin: 0; */
-  /* padding: 0; */
-  /* line-height: 1.4; */
   font-family: 'Montserrat', sans-serif;
-  /* color: #333; */
 }
 
 h1 {
@@ -30,7 +26,7 @@ input {
   white-space: nowrap;
   overflow: hidden;
   opacity: 0;
-  animation: active-typing 2s steps(26, end);
+  animation: active-typing 3s steps(26, end);
   animation-delay: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
@@ -64,6 +60,10 @@ input {
   0% {
     opacity: 1;
   }
+}
+
+.removed {
+  display: none;
 }
 
 /* @keyframes hide-cursor {
