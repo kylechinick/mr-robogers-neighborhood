@@ -37,14 +37,14 @@ N/A
 
 ## Tests
 
-Describe: rangedArrayBuilder()
+### Describe: rangedArrayBuilder()
 
 Test: "It should return an array of numbers from 0 to the argued number"
 Code: rangedArrayBuilder(15);
 Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
-Describe: numberToPhraseSubstitutor()
+### Describe: numberToPhraseSubstitutor()
 
-Test: "It should loop through each element in an array and swap all elements with a 1 to the string 'Beep!'"
+Test: "It should loop through each element in an array and swap all elements with a 3 to the string 'Beep!'"
 Code: numberToPhraseSubstitutor(rangedArray);
 Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]

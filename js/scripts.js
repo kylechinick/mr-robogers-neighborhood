@@ -13,8 +13,8 @@ console.log(rangedArray);
 function numberToPhraseSubstitutor(numbersArray) {
   responseArray = [];
   numbersArray.forEach(function (element, index) {
-    if (element.toString().includes(1)) {
-      element = 'Beep!';
+    if (element.toString().includes(3)) {
+      element = "Won't you be my neighbor?";
       responseArray.push(element);
     } else {
       responseArray.push(element);
