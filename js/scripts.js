@@ -32,8 +32,6 @@ function humanLegibilityTransformer(array) {
   return humanLegibleResponse;
 }
 
-// UI Logic
-
 function userResponder(response, totalElements) {
   if (totalElements > 200) {
     $('#mr-robogers-response').text(response).show('blind', 5000);
