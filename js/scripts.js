@@ -35,12 +35,14 @@ function humanLegibilityTransformer(array) {
 // UI Logic
 
 function userResponder(response) {
-  $('#mr-robogers-response').text(response);
+  $('#mr-robogers-response').text(response).show('blind', 4000);
 }
 
 $(document).ready(function () {
   $('form').submit(function () {
     event.preventDefault();
+
+    $('.closing-cursor').remove();
 
     const providedNumber = parseInt($('#prompt-number').val());
 
@@ -49,5 +51,9 @@ $(document).ready(function () {
     numberToPhraseSubstitutor(rangedArray);
 
     userResponder(humanLegibilityTransformer(responseArray));
+
+    $('#response-container').append(
+      `<p class="cursor-pipe closing-cursor terminal-text">|</p>`
+    );
   });
 });

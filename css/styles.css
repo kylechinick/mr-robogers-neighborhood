@@ -14,7 +14,8 @@ input {
 
 #response-container {
   background-color: #333;
-  min-height: 300px;
+  height: 300px;
+  overflow: scroll;
 }
 
 .terminal-text {
@@ -62,12 +63,6 @@ input {
   }
 }
 
-.removed {
+#mr-robogers-response {
   display: none;
 }
-
-/* @keyframes hide-cursor {
-  0% {
-    opacity: 1;
-  }
-} */
