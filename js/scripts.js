@@ -12,12 +12,15 @@ console.log(rangedArray);
 
 function numberToPhraseSubstitutor(numbersArray) {
   responseArray = [];
-  numbersArray.forEach(function (element, index) {
+  numbersArray.forEach(function (element) {
     if (element.toString().includes(3)) {
       element = "Won't you be my neighbor?";
       responseArray.push(element);
     } else if (element.toString().includes(2)) {
       element = 'Boop!';
+      responseArray.push(element);
+    } else if (element.toString().includes(1)) {
+      element = 'Beep!';
       responseArray.push(element);
     } else {
       responseArray.push(element);
