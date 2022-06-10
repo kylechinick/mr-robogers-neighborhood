@@ -16,6 +16,9 @@ function numberToPhraseSubstitutor(numbersArray) {
     if (element.toString().includes(3)) {
       element = "Won't you be my neighbor?";
       responseArray.push(element);
+    } else if (element.toString().includes(2)) {
+      element = 'Boop!';
+      responseArray.push(element);
     } else {
       responseArray.push(element);
     }
