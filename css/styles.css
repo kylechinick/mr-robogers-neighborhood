@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   box-sizing: border-box;
   /* margin: 0; */
   /* padding: 0; */
@@ -8,9 +8,66 @@
   /* color: #333; */
 }
 
+h1 {
+  font-weight: 900;
+}
+
 input {
   max-width: 300px;
 }
 
-/* Robo font – 
-font-family: 'Kdam Thmor Pro', sans-serif; */
+#response-container {
+  background-color: #333;
+  min-height: 300px;
+}
+
+.terminal-text {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: rgb(23, 177, 23);
+}
+
+#mr-robogers-offer {
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  animation: active-typing 2s steps(26, end);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes active-typing {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    width: 450px;
+    opacity: 1;
+  }
+}
+
+.cursor-pipe {
+  font-weight: 900;
+  opacity: 0;
+  animation: blinking-cursor 1.5s steps(2) infinite;
+}
+
+.closing-cursor {
+  animation-delay: 7s;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes hide-cursor {
+  0% {
+    opacity: 1;
+  }
+} */
