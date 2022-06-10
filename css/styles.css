@@ -1,3 +1,11 @@
 * {
-  color: red;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
 }
+
+/* Robo font – 
+font-family: 'Kdam Thmor Pro', sans-serif; */
